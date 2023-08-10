@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <div style="max-width: 450px; margin: auto;">
+        <form action="" method="get">
+            <p style="background-color: orange; padding: 3px; text-transform: uppercase;">Sistema de gestão acadêmica</p>
+            <p style="font-weight: bold;text-transform: uppercase;">Manutenção de usuários do sistema interno</p>
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login"> <br><br>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="status">Status:</label>
+            <select name="status" id="status">
+                <option selected value="inativo">Inativo</option>
+                <option value="ativo">Ativo</option>
+            </select><br><br>
+            <p style="display: inline;">Área de atuação</p>
+            <input type="radio" name="tipo" id="tecnico" value="tecnico">
+            <label for="tecnico">Técnico</label>
+            <input type="radio" name="tipo" id="Professor" value="Professor">
+            <label for="Professor">Professor</label>
+            <input type="radio" name="tipo" id="Aluno" value="Aluno">
+            <label for="Aluno">Aluno</label><br><br>
+            <label for="dataCriacao">Data Criação</label>
+            <input type="date" name="dataCriacao" id="dataCriacao"><br><br>
+            <p style="display: inline;">Área de atuação</p>
+            <input type="radio" name="perfil" id="convidado" value="convidado">
+            <label for="convidado">Convidado</label>
+            <input type="radio" name="perfil" id="administrador" value="administrador">
+            <label for="administrador">Administrador</label><br><br>
+            <label for="observacoes">Observações</label>
+            <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea><br><br>
+            <p style="margin-bottom: 0; display: inline;">Área de interesse</p>
+                        <div style="display: inline-block;">
+                            <input type="checkbox" name="modulo1" id="modulo1" value="compras">
+                            <label for="modulo1">Compras</label>
+                            <input type="checkbox" name="modulo2" id="modulo2" value="biblioteca">
+                            <label for="modulo2">Biblioteca</label>
+                            <input type="checkbox" name="modulo3" id="modulo3" value="academico">
+                            <label for="modulo3">Acadêmico</label><br>
+                            <input type="checkbox" name="modulo4" id="modulo4" value="documentacao">
+                            <label for="modulo4">Documentação</label>
+                            <input type="checkbox" name="modulo5" id="modulo5" value="recursosHumanos">
+                            <label for="modulo5">Recursos Humanos</label>
+                        </div><br>
+            <input type="submit" value="Cadastrar"> <input type="reset" value="Excluir">
+        </form>
+        <a href="index.html">Voltar</a>
+    </div>
+</body>
+</html>

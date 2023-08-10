@@ -6,22 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04</title>
 </head>
-<body>
-    <h1>Escola Virtual</h1>
-    <h2>Formulário de Pré-Matrícula</h2>
-    <hr>
-    <form action="">
-        <fieldset>
-            <h3>Dados Pessoais:</h3>
-            <label for="nome">Nome do Aluno</label>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="day">Nascimento (dd/mm/yyyy)</label>
-            <input style="width: 35px;" id="day" name="day" type="number">/<input style="width: 35px;" type="number" name="month" id="month">/<input style="width: 35px;" type="number" name="year" id="year"><br>
-            <label for="nomeMãe">Nome da Mãe</label>
-            <input type="text" id="nomeMãe" name="nomeMãe"><br>
-            <label for="nomePai">Nome do Pai</label>
-            <input type="text" id="nomePai" name="nomePai"><br>
-        </fieldset>
-    </form>
-</body>
+    <body>
+        <div style="max-width: 500px; margin: auto;">
+            <h1>Escola Virtual</h1>
+            <h2>Formulário de Pré-Matrícula</h2>
+            <hr>
+            <form action="get">
+                <fieldset>
+                    <h3>Dados Pessoais:</h3>
+                    <label for="nome">Nome do Aluno</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="day">Nascimento (dd/mm/yyyy)</label>
+                    <input style="width: 35px;" id="day" name="day" type="number">/<input style="width: 35px;" type="number" name="month" id="month">/<input style="width: 35px;" type="number" name="year" id="year"><br>
+                    <label for="nomeMãe">Nome da Mãe</label>
+                    <input type="text" id="nomeMae" name="nomeMãe"><br>
+                    <label for="nomePai">Nome do Pai</label>
+                    <input type="text" id="nomePai" name="nomePai"><br>
+                    <div>
+                        <p style="display: inline;">Telefone:</p>
+                        <label for="ddd">DDD</label>(<input style="width: 2rem;" name="ddd" id="ddd" type="tel">)
+                        <label for="telefone">Tel:</label>(<input style="width: 7rem;" name="telefone" id="telefone" type="tel">)
+                        <label for="ramal">Ramal:</label>(<input style="width: 4rem;" name="ramal" id="ramal" type="tel">)
+                    </div>
+        
+                </fieldset>
+                <fieldset>
+                    <h3>Informações de Matrícula</h3>
+                    <table>
+                        <tr>
+                            <td><label for="serie">Série:</label></td>
+                            <td><label for="turno">Turno:</label></td>
+                            <td><label for="extra1">Atividades Extracurriculares</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="serie" id="serie">
+                                    <option selected value="pre escolar">Pré-Escolar</option>
+                                    <option value="ensino fundamental">Ensino Fundamental</option>
+                                    <option value="ensino medio">Ensino Médio</option>
+                                    <option value="ensino tecnico">Ensino Técnico</option>
+                                    <option value="ensino superior">Ensino Superior</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="radio" name="turno" id="manha" value="manha">
+                                <label for="manha">Manhã</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="extra1" id="extra1" value="informatica">
+                                <label for="extra1">Informática</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="radio" name="turno" id="tarde" value="tarde">
+                                <label for="tarde">Tarde</label><br></td>
+                            <td>
+                                <input type="checkbox" name="extra2" id="extra2" value="musica">
+                                <label for="extra2">Música</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="extra3" id="extra3" value="balet">
+                                <label for="extra3">Balet</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="extra4" id="extra4" value="pintura">
+                                <label for="extra4">Pintura</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="extra5" id="extra5" value="judo">
+                                <label for="extra5">Judô</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="extra6" id="extra6" value="futebol">
+                                <label for="extra6">Futebol</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+            <p>[O exercício não tinha submit]</p>
+            <a href="index.html">Voltar</a>
+        </div>
+    </body>
 </html>

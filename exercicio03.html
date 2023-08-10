@@ -11,35 +11,36 @@
     </style>
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <label for="">Nome:</label>
-            <input type="text"><br>
-            <label for="">Idade:</label>
-            <input type="text">
-        </fieldset><br>
-
-        <fieldset>
-            <legend>Dados profissionais</legend>
-            <label for="escolaridade">Escolaridade:</label>
-            <select name="escolaridade" id="escolaridade">
-                <option selected disabled value=""></option>
-                <option value="ensino fundamental">Ensino Fundamental</option>
-                <option value="ensino medio">Ensino Médio</option>
-                <option value="ensino tecnico">Ensino Técnico</option>
-                <option value="ensino superior">Ensino Superior</option>
-            </select><br>
-            <p style="display: inline;">Área de atuação</p>
-            <input type="radio" name="area" id="gerencia" value="gerencia">
-            <label for="gerencia">Gerência</label>
-            <input type="radio" name="area" id="financeiro" value="financeiro">
-            <label for="financeiro">Finânceiro</label>
-            <input type="radio" name="area" id="recepcao" value="recepcao">
-            <label for="recepcao">Recepção</label>
-        </fieldset>
-    </form>
-    <p>[O exercício não tinha submit]</p>
-    <a href="index.html">Voltar</a>
+    <div style="max-width: 550px; margin: auto;">
+        <form method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="">Nome:</label>
+                <input type="text"><br>
+                <label for="">Idade:</label>
+                <input type="text">
+            </fieldset><br>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label for="escolaridade">Escolaridade:</label>
+                <select name="escolaridade" id="escolaridade">
+                    <option selected disabled value=""></option>
+                    <option value="ensino fundamental">Ensino Fundamental</option>
+                    <option value="ensino medio">Ensino Médio</option>
+                    <option value="ensino tecnico">Ensino Técnico</option>
+                    <option value="ensino superior">Ensino Superior</option>
+                </select><br>
+                <p style="display: inline;">Área de atuação</p>
+                <input type="radio" name="area" id="gerencia" value="gerencia">
+                <label for="gerencia">Gerência</label>
+                <input type="radio" name="area" id="financeiro" value="financeiro">
+                <label for="financeiro">Finânceiro</label>
+                <input type="radio" name="area" id="recepcao" value="recepcao">
+                <label for="recepcao">Recepção</label>
+            </fieldset>
+        </form>
+        <p>[O exercício não tinha submit]</p>
+        <a href="index.html">Voltar</a>
+    </div>
 </body>
 </html>
